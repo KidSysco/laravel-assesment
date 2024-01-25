@@ -17,3 +17,12 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/hello', function () {
+  return "Hello World!";
+});
+
+Route::get('/reverse-string', function (Request $request) {
+  $reversed = strrev($request->input('string'));
+  return $reversed;
+});
