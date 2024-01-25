@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Models\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,4 +26,9 @@ Route::get('/hello', function () {
 Route::get('/reverse-string', function (Request $request) {
   $reversed = strrev($request->input('string'));
   return $reversed;
+});
+
+Route::get('/users', function () {
+    $users = User::all();
+    return response()->json(['users' => $users]);
 });
