@@ -32,3 +32,13 @@ Route::get('/users', function () {
     $users = User::all();
     return response()->json(['users' => $users]);
 });
+
+Route::get('/users/{id}', function ($id) {
+    $user = User::find($id);
+
+    if (!$user) {
+        return response()->json(['error' => 'User not found'], 404);
+    }
+
+    return response()->json(['user' => $user]);
+});
