@@ -6,9 +6,9 @@ This is a quick assessment of the Laravel Framework, to show interest, and hopef
 
 ## Code
 
-In the `routes/api.php` file I have added some simple Get endpoints designed to return sample records from SQLite.
+In the `routes/api.php` file I have added some simple Get endpoints designed to return sample records from an SQLite file stored at, ` app/database/database.sqlite`.
 
-There is one migration using Faker to generate several sample user accounts.
+There is one seeder `app/database/seeders/UsersTableSeeder.php` using Faker to generate several sample user accounts.
 
 ## E2E Testing
 
