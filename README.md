@@ -2,7 +2,7 @@
 
 # Greetings Wild Alaskan Company!
 
-This is a quick assessment of the Laravel Framework, to show interest, and hopefully gain an interview with your company.
+This is a quick assessment of the Laravel Framework, to show interest, and hopefully gain an interview with your team!
 
 ## Code
 
